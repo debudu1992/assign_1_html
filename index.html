@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="bootstrap-5.3.6-dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .nav-link:hover {
+      text-decoration: underline;
+      color: blueviolet;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img class="icons" src="icons/logo.png" alt="Logo">
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+        aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-end" id="navbarContent">
+        <ul class="navbar-nav mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Portfolio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Skill</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+          <li class="nav-item dropdown">
+            <button class="btn btn-primary dropdown-toggle ms-2" type="button" id="resumeDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+              Resume
+            </button>
+            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="resumeDropdown">
+              <li><a class="dropdown-item" href="images/resume.pdf" download>Download PDF</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="intro-section">
+    <div class="intro-text">
+      <header class="bg-light text-black py-4">
+        <h1>Hi I'm Deb Dutta</h1>
+        <h4 class="text-secondary">Network Automation || Programmer || Electrical Engineer</h4>
+      </header>
+    </div>
+    <img src="images/me.jpg" class="image-right" alt="Deb Dutta" width="300">
+  </div>
+  <section class="portfolio-section">
+    <h1>Portfolio</h1>
+    <div id="experienceCarousel" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+
+    <!-- Slide 1: Experience -->
+    <div class="carousel-item active">
+      <div class="d-flex flex-column align-items-center text-center p-4">
+        <img src="projects-img/cuet.png" class="img-fluid mb-3" style="max-width: 400px;" alt="">
+        <p class="px-3">
+          Started career as Lecturer at first, finished competitive exam for moving abroad. 
+          In this meantime got some experience at telecom sector and came to know about 
+          so many protocols: GSM, CDMA etc. Later moved to USA for higher studies.
+          Now engaged in learning coding to be fluent in automation to execute network health checks.
+        </p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <div class="d-flex flex-column align-items-center text-center p-4">
+        <img src="projects-img/city.jfif" class="img-fluid mb-3" style="max-width: 400px;" alt="Study Image">
+        <p class="px-3">
+          Finished Bachelor's from CUET in 2008. Managed to get good marks on the GRE,
+          which helped me move to the USA for an MS in Engineering.
+        </p>
+      </div>
+    </div>
+
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#experienceCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#experienceCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+</div>
+  </section>
+  <footer class="bg-dark text-white py-5">
+    <div class="container">
+      <div class="row">
+        <!-- Expertise -->
+        <div class="col-12 col-md-4 mb-4">
+          <h5>Expertise</h5>
+          <ul class="list-unstyled">
+            <li>Network</li>
+            <li>Network Automation</li>
+            <li>Routing Protocol</li>
+            <li>Juniper, Cisco</li>
+            <li><a href="#" class="text-white">LinkedIn</a></li>
+          </ul>
+        </div>
+        <div class="col-12 col-md-4 mb-4">
+          <h5>About</h5>
+          <ul class="list-unstyled">
+            <li>My Story</li>
+            <li>Experience: 15 Years</li>
+            <li>Skill: C++, Python</li>
+            <li>CCIE Certified</li>
+            <li>JNIE Certified</li>
+          </ul>
+        </div>
+        <div class="col-12 col-md-4 mb-4">
+          <h5>Services</h5>
+          <ul class="list-unstyled">
+            <li>Support</li>
+            <li>FAQs</li>
+            <li>Help Center</li>
+          </ul>
+        </div>
+      </div>
+     <div class="row justify-content-center mt-4">
+        <div class="col-12 col-md-8 text-center">
+          <h5>Theme</h5>
+          <p>Passionate about networking and automation. Managing to work with C++, Python 
+            Ping me to manage your flawless network.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+  <!-- Bootstrap JS -->
+  <script src="bootstrap-5.3.6-dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
